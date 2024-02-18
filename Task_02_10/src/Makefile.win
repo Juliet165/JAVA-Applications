@@ -1,0 +1,32 @@
+# makefile Task_02_10
+# windows version
+
+.SUFFIXES: .class .java
+
+PACK=Task_02_10
+TARG=TestInterval
+JC=javac -g -encoding utf8
+JM=java -ea -jar
+JR=jar -cfe
+
+OBJ=$(PACK)\Interval.class \
+    $(PACK)\TestInterval.class
+
+.java.class:
+	$(JC) $<
+
+run: build
+	$(JM) $(TARG).jar
+
+build: 	$(OBJ)
+	$(JR) $(TARG).jar $(PACK).TestInterval $(OBJ)
+
+clean:
+	for %%f in ($(OBJ)) do del %%f
+	del $(TARG).jar
+
+$(PACK)\Interval.class: $(PACK)\Interval.java makefile.win
+
+$(PACK)\TestInterval.class: $(PACK)\TestInterval.java makefile.win
+
+# eof makefile Task_02_10

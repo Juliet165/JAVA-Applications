@@ -1,0 +1,6 @@
+type=Тип
+age=Возраст
+fruit_bearing=Плодоношение
+creation_time=Время создания
+yes=Да
+no=Нет

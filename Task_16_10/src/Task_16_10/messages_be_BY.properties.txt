@@ -1,0 +1,6 @@
+type=Тып
+age=Узрост
+fruit_bearing=Плоднасць
+creation_time=Час стварэння
+yes=Tак
+no=Не

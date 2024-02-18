@@ -1,0 +1,6 @@
+type=Type
+age=Age
+fruit_bearing=Fruit Bearing
+creation_time=Creation Time
+yes=Yes
+no=No
